@@ -1,0 +1,14 @@
+{
+  "name": "packages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "CreateDeviceIdentity.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Angelo Polotto",
+  "license": "ISC",
+  "dependencies": {
+    "azure-iothub": "^1.1.9"
+  }
+}

@@ -2,17 +2,16 @@
 
 var EventHubClient = require('azure-event-hubs').Client;
 
-//HostName={youriothostname};DeviceId=myFirstNodeDevice;SharedAccessKey={yourdevicekey}
-var connectionString = '{iothub connection string}';
+var connectionString = "HostName={youreventhubcompatibleendpoint};SharedAccessKeyName=iothubowner;SharedAccessKey={youriothubkey}";
 
 var printError = function (err) {
-console.log(err.message);
+    console.log(err.message);
 };
 
 var printMessage = function (message) {
-console.log('Message received: ');
-console.log(JSON.stringify(message.body));
-console.log('');
+    console.log('Message received: ');
+    console.log(JSON.stringify(message.body));
+    console.log('');
 };
 
 var client = EventHubClient.fromConnectionString(connectionString);
