@@ -3,7 +3,7 @@
 var Client = require('azure-iothub').Client;
 var Message = require('azure-iot-common').Message;
 
-var connectionString = '{iot hub connection string}';
+var connectionString = "HostName={youreventhubcompatibleendpoint};SharedAccessKeyName=iothubowner;SharedAccessKey={youriothubkey}";
 var targetDevice = '{device id}';
 
 var serviceClient = Client.fromConnectionString(connectionString);
