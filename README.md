@@ -15,8 +15,8 @@ Apresentação: https://goo.gl/k725qJ .
 * Atualizar o Node Red através desse tutorial: https://nodered.org/docs/hardware/raspberrypi
 * Abrir o terminal
 * Instalar os drivers bluetooth com os comandos: 
---* sudo apt-get install libbluetooth-dev libudev-dev pi-bluetooth
---* sudo setcap cap_net_raw+eip $(eval readlink -f `which node`)
+  * sudo apt-get install libbluetooth-dev libudev-dev pi-bluetooth
+  * sudo setcap cap_net_raw+eip $(eval readlink -f `which node`)
 * Ir até o diretório .nod-red na pasta do usuário
 * Instalar o Node Red Sensor Tag: npm i node-red-node-sensortag
 * Instalar o Node Red Dashboard: npm i node-red-dashboard
