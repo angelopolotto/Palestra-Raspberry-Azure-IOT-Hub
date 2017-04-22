@@ -14,9 +14,13 @@ Apresentação: https://goo.gl/k725qJ .
 # Configurando o Raspberry
 * Atualizar o Node Red através desse tutorial: https://nodered.org/docs/hardware/raspberrypi
 * Abrir o terminal
-* Instalar os drivers bluetooth com os comandos: 
-  * sudo apt-get install libbluetooth-dev libudev-dev pi-bluetooth
-  * sudo setcap cap_net_raw+eip $(eval readlink -f `which node`)
+* Instalar os drivers bluetooth com os comandos:
+
+```
+  sudo apt-get install libbluetooth-dev libudev-dev pi-bluetooth
+  sudo setcap cap_net_raw+eip $(eval readlink -f 'which node')
+```
+
 * Ir até o diretório .nod-red na pasta do usuário
 * Instalar o Node Red Sensor Tag: npm i node-red-node-sensortag
 * Instalar o Node Red Dashboard: npm i node-red-dashboard
@@ -41,4 +45,16 @@ Apresentação: https://goo.gl/k725qJ .
 
 # Configurando o Azure IOT Hub:
 * Seguir o tutorial: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-node-node-getstarted
-* Os códigos de teste estão disponíveis em: Scripts Node JS Azure IOT
+* Cadastrar um novo dispositivo no azure portal em _Device Explorer_
+* Copiar sua cadeia (string) de conexão do dispositivo, chave primária e ID
+* Inserir no flow do Node Red do raspberry
+* Ir em _Políticas de acesso compartilhado_ no azure portal
+* Copiar a cadeia (string) de conexão do _iothubowner_
+* Inserir no flow do Node Red de monitoramento no computador
+
+# Testando as funcionalidades do Azure IOT Hub:
+* Clone os códigos disponíveis em: Scripts Node JS Azure IOT
+* Escolha um script
+* Utilize as credenciais obtidas no item anterior
+* Instale os pacotes necessários: _npm install_
+* Execute o script: node nome_do_arquivo.js
