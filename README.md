@@ -2,16 +2,16 @@
 Código do conteúdo apresentado na palestra "Azure e Raspberry Pi: um exemplo de monitoramento remoto""
 Apresentação: https://goo.gl/k725qJ .
 
-#Organização do diretório
+# Organização do diretório
 * Leitura do Sensor Tag: Exemplo de leitura de dados do sensor tag
 * Monitoramento Remoto: Monitoramento remoto dos dados utilizanod Azure IOT Hub
 * Scripts Node JS Azure IOT: Ferramentas para ajudar no desenvolvimento com o Azure IOT Hub
 
-#Materiais necessários:
+# Materiais necessários:
 * Raspberry Pi 3 com o Raspbian Instalado
 * Texas Instruments Sensor Tag CC2650
 
-#Configurando o Raspberry
+# Configurando o Raspberry
 * Atualizar o Node Red através desse tutorial: https://nodered.org/docs/hardware/raspberrypi
 * Abrir o terminal
 * Instalar os drivers bluetooth com os comandos: 
@@ -26,7 +26,7 @@ Apresentação: https://goo.gl/k725qJ .
 * Copiar o texto do arquivo: Monitoramento Remoto/Exemplo2_Azure_IOT_Raspberry.json
 * Ir até o menu/importar no Node Red e colar o texto
 
-#Configurando o computador remoto onde os dados chegarão:
+# Configurando o computador remoto onde os dados chegarão:
 * Instalar o Node.js para o seu sistema
 * Instalar o Node Red de acordo com o seu sistema: http://nodered.org/docs/getting-started/installation.html
 * Ir até a pasta onde o Node Red foi instalado
@@ -39,6 +39,6 @@ Apresentação: https://goo.gl/k725qJ .
 * Copiar o texto do arquivo: Monitoramento Remoto/Exemplo2_Azure_IOT_Remoto.json
 * Ir até o menu/importar no Node Red e colar o texto
 
-#Configurando o Azure IOT Hub:
+# Configurando o Azure IOT Hub:
 * Seguir o tutorial: https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-node-node-getstarted
 * Os códigos de teste estão disponíveis em: Scripts Node JS Azure IOT
